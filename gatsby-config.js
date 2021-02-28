@@ -6,6 +6,14 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title : `ESSENTIALS`,
+    description : `おいしい食材と食事を探求するサイト`,
+    lang : `ja`,
+    siteUrl : `https://distracted-darwin-9668e6.netlify.app`,
+    locale: `ja-JP`,
+    fbappid: `XXXXXXXXXXXXXXX`,
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -16,5 +24,6 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    `gatsby-plugin-react-helmet`
   ],
 }
