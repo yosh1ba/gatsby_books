@@ -16,8 +16,8 @@ export default ({data, location}) => (
     pagedesc="食べ物についての情報を発信しているサイトです。"
     pagepath={location.pathname}
     pageimg={data.about.childImageSharp.original.src}
-    pageimg={data.about.childImageSharp.original.width}
-    pageimg={data.about.childImageSharp.original.height}
+    pageimgw={data.about.childImageSharp.original.width}
+    pageimgh={data.about.childImageSharp.original.height}
   />
 <div className="eyecatch">
   <figure>
