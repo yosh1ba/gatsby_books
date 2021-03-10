@@ -15,6 +15,15 @@ module.exports = {
     fbappid: `XXXXXXXXXXXXXXX`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-B78FGMS7PJ`,
+        head: true,
+        respectDNT: true,
+        exclude: [`/cat/**`, `/test/`],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -45,12 +54,6 @@ module.exports = {
         accessToken:  process.env.CONTENTFUL_ACCESS_TOKEN,
         host: process.env.CONTENTFUL_HOST,
       }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `G-B78FGMS7PJ`
-      },
     },
   ],
 }
